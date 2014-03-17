@@ -16,15 +16,17 @@
     <div id="albumImage">
         <img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}">
     </div>
-    <div id="thumbWrapper">
-        <ul id="thumbList">
-            <li class="thumbnail" ng-repeat="image in images | filter:categories" ng-click="setCurrentImage(image)">
-                <img ng-src="{{image.thumbnail}}" alt="{{image.description}}">
+    <div class="row">
+        <ul class="list-inline">
+            <li class="thumbnail" 
+                ng-repeat="image in images | filter:categories"  
+                ng-click="setCurrentImage(image)">
+              <img ng-src="{{image.thumbnail}}" alt="{{image.description}}">
             </li>
         </ul>
     </div>
 </div>
 
 <div class="footer">
-  <p>♥ from the Yeoman team</p>
+  <p>♥ </p>
 </div>
